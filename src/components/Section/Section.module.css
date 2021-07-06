@@ -1,0 +1,13 @@
+.section {
+  padding: 30px 0;
+}
+
+.plain {
+  composes: section;
+  background-color: #ffffff;
+}
+
+.highlighted {
+  composes: section;
+  background-color: #eeeeee;
+}

@@ -1,0 +1,34 @@
+.transactionHistory {
+  width: 100%;
+
+  border: 2px solid dimgray;
+  border-collapse: collapse;
+
+  text-transform: capitalize;
+}
+
+thead {
+  height: 40px;
+  border-radius: 10px;
+
+  color: #fff;
+  background-color: dimgray;
+}
+
+tbody {
+  text-align: center;
+  border: 2px solid dimgray;
+}
+
+tbody td:not(:last-child) {
+  border-right: 2px solid dimgray;
+}
+
+tr:nth-child(even) {
+  background-color: ghostwhite;
+}
+
+th,
+td {
+  padding: 20px;
+}
