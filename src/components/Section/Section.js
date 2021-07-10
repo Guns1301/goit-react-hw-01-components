@@ -5,6 +5,8 @@ import Container from '../Container/Container';
 import styles from './Section.module.css';
 
 const Section = ({ type, children }) => (
+  //  [type] - это значение переменной которое мы не знаем заранее.
+
   <section className={styles[type]}>
     <Container>{children}</Container>
   </section>

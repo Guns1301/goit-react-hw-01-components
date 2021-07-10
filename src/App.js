@@ -19,7 +19,7 @@ function App() {
       <Section>
         <Title text="Task One. Social Media Profile" />
         <Profile
-          name={name}
+          name={name} // тут передаются свойства объекта props который приходит в функцию Компонента
           tag={tag}
           location={location}
           avatar={avatar}

@@ -17,7 +17,7 @@
 
   border-radius: 50%;
 }
-
+/* composes - добавляет стили с указаного класса, в данном случаи - status */
 .online {
   composes: status;
   background-color: #4caf50;

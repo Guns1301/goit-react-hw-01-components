@@ -6,7 +6,7 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  // строгий режим -
+  // строгий режим - инструмент для обнаружения потенциальных проблем в приложении.
   <React.StrictMode>
     <App />
   </React.StrictMode>,

@@ -1,3 +1,14 @@
+// 1. импортируем реакт, в каждый модуль, в каждый компонент - иначе JSX не скомпилируется
+// 2. создаем компонент с большой буквы
+// 3. дефолтный експорт
+// 4. прописка и импорт PropTypes
+// 5. импорт стилей
+// 6. рендер компонента в модуль App, для этого импортируем в App компонет Profile
+// 7. прописка PropTypes
+// 8. прописка defaultProps
+// 9. импорт дефолтных картинок
+// 10.
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -41,7 +52,7 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
 };
 
 Profile.propTypes = {
-  avatar: PropTypes.string,
+  avatar: PropTypes.string, // если PropTypes обязательный то defaultProps для него не нужно прописывать,а если PropTypes не обязательный то для него обязательно должен быть прописан defaultProps
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
@@ -58,12 +69,3 @@ Profile.defaultProps = {
 };
 
 export default Profile;
-
-// 1. импортируем реакт, в каждый модуль, в каждый компонент - иначе JSX не скомпилируется
-// 2. создаем компонент
-// 3. дефолтный експорт
-// 4. прописка и импорт PropTypes
-// 5. импорт стилей
-// 6. рендер компонента в модуль App, для этого импортируем в App компонет Profile
-// 7. прописка PropTypes
-// 8. прописка defaultProps
